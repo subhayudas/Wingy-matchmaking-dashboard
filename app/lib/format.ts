@@ -26,10 +26,24 @@ export function verdictChip(verdict: string | null): { cls: string; label: strin
 
 export function initials(name: string | null, fallback: string | null): string {
   const n = (name && name.trim()) || fallback || "?";
-  const parts = n.split(/\s+/).filter(Boolean);
+  // Split on whitespace and hyphens, and drop the numeric suffix so a
+  // pseudonym like "calm-swift-7843" yields "CS" rather than "CA".
+  const parts = n.split(/[\s-]+/).filter((p) => p && !/^\d+$/.test(p));
   if (parts.length === 0) return "?";
   if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
   return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+}
+
+/**
+ * Choose the most representative photo for a person. `photo_paths_json` is built
+ * from Supabase `usermedia` (see engine/lib/usermedia.ts), already ordered so
+ * the scraper's curated `profile_photos` — the best face-forward shots of the
+ * person — sit first, ahead of other feed images. So the first path is the best
+ * available picture of them; just take it.
+ */
+export function pickPhoto(paths: string[] | null | undefined): string | null {
+  if (!paths || paths.length === 0) return null;
+  return paths[0];
 }
 
 /**
@@ -45,8 +59,14 @@ export function photoUrl(path: string | null | undefined): string | null {
   return `/api/photo/${clean.split("/").map(encodeURIComponent).join("/")}`;
 }
 
-export function displayName(u: { full_name?: string | null; readable_username?: string | null; pseudonym?: string | null }): string {
-  return (u.full_name && u.full_name.trim()) || u.readable_username || u.pseudonym || "Unknown";
+/**
+ * The dashboard never surfaces a person's real identity. Always show their
+ * pseudonym (the Supabase `users.pseudonym`, e.g. "calm-swift-7843"), which is
+ * populated for every user. `full_name`/`readable_username` are kept on the
+ * record only for search/matching, never for display.
+ */
+export function displayName(u: { pseudonym?: string | null }): string {
+  return (u.pseudonym && u.pseudonym.trim()) || "Unknown";
 }
 
 export const REASON_LABELS: Record<string, string> = {

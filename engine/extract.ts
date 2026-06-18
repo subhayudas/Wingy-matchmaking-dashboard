@@ -4,6 +4,7 @@ import { supabase, azureTable } from "./lib/clients";
 import {
   normalizeAge, normalizeGender, normalizeDatingPref, normalizeMascFem, deriveCareer,
 } from "./lib/normalize";
+import { pullUserMediaPhotos } from "./lib/usermedia";
 import type { NormUser } from "./types";
 
 const CACHE_DIR = resolve(process.cwd(), "engine/.cache");
@@ -39,7 +40,6 @@ interface VisualRec {
   composite: number | null;
   archetype: string | null;
   mascFem: number | null;
-  photos: string[];
   raw: any;
 }
 
@@ -73,19 +73,13 @@ async function pullAzureVisual(): Promise<Map<string, VisualRec>> {
     const mascFem = normalizeMascFem(
       parsed?.polarity_profile?.masculine_feminine_signal ?? parsed?.masculine_feminine_signal
     );
-    // photo paths live on the entity as a JSON array string
-    let photos: string[] = [];
-    try {
-      const ip = (e as any).image_paths_json;
-      const arr = typeof ip === "string" ? JSON.parse(ip) : ip;
-      if (Array.isArray(arr)) photos = arr.map(String).slice(0, 6);
-    } catch {
-      /* ignore */
-    }
+    // Display photos are sourced separately from Supabase `usermedia` (which is
+    // more complete and curates a `profile_photos` flag); this table is used
+    // only for the visual scores.
     // Keep the highest-composite profile if a user has multiple analyzed rows.
     const prev = map.get(pk);
     if (!prev || (composite ?? -1) > (prev.composite ?? -1)) {
-      map.set(pk, { composite, archetype, mascFem, photos, raw: parsed });
+      map.set(pk, { composite, archetype, mascFem, raw: parsed });
     }
   }
   return map;
@@ -112,6 +106,10 @@ export async function extractUsers(opts: { useCache?: boolean } = {}): Promise<N
   console.log("  scanning azure uservisualprofile...");
   const visual = await pullAzureVisual();
   console.log(`  azure: ${visual.size} visual profiles`);
+
+  console.log("  pulling supabase usermedia (display photos)...");
+  const media = await pullUserMediaPhotos();
+  console.log(`  usermedia: photos for ${media.size} users`);
 
   const out: NormUser[] = users.map((u: any) => {
     const b = basicsBy.get(u.id) || {};
@@ -162,7 +160,7 @@ export async function extractUsers(opts: { useCache?: boolean } = {}): Promise<N
 
       eligible: false,
       ineligible_reason: null,
-      photo_paths: v?.photos ?? [],
+      photo_paths: media.get(u.id) ?? [],
     };
   });
 

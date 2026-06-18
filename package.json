@@ -9,6 +9,7 @@
     "lint": "next lint",
     "engine:probe": "tsx engine/probe.ts",
     "engine:run": "tsx engine/run.ts",
+    "engine:backfill-photos": "tsx engine/backfill-photos.ts",
     "engine:schema": "tsx engine/store/schema.ts"
   },
   "dependencies": {

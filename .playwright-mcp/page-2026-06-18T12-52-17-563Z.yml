@@ -1,0 +1,252 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Wingy Matchmaking Studio" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: Wingy
+        - generic [ref=e6]: Matchmaking Studio
+      - navigation [ref=e7]:
+        - link "Matches" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "Top Matches" [ref=e9] [cursor=pointer]:
+          - /url: /rankings
+        - link "Pool" [ref=e10] [cursor=pointer]:
+          - /url: /pool
+        - link "Excluded" [ref=e11] [cursor=pointer]:
+          - /url: /excluded
+        - link "Run Overview" [ref=e12] [cursor=pointer]:
+          - /url: /overview
+  - main [ref=e13]:
+    - generic [ref=e14]:
+      - generic [ref=e16]:
+        - paragraph [ref=e17]: Run run_orientation_fix2 · claude-sonnet-4-6
+        - heading "Mutual Matches" [level=1] [ref=e18]
+        - paragraph [ref=e19]: Every pair here is mutual, gate-clean, age-valid and LLM-approved in both directions — people who would genuinely want to date each other. Filter, search, and open any match for the full reasoning.
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - generic [ref=e22]:
+            - textbox "Search name, username, city…" [ref=e23]
+            - generic [ref=e24]:
+              - button "all" [ref=e25] [cursor=pointer]
+              - button "woman" [ref=e26] [cursor=pointer]
+              - button "man" [ref=e27] [cursor=pointer]
+            - button "★ Strong mutual" [ref=e28] [cursor=pointer]
+            - combobox [ref=e29] [cursor=pointer]:
+              - 'option "Sort: Best overall" [selected]'
+              - 'option "Sort: Attraction"'
+              - 'option "Sort: Career"'
+            - button "Export CSV" [ref=e30] [cursor=pointer]
+          - generic [ref=e31]:
+            - generic [ref=e32]:
+              - generic [ref=e33]:
+                - generic [ref=e34]: Min score
+                - generic [ref=e35]: 0+
+              - slider "Min score 0+" [ref=e36]: "0"
+            - generic [ref=e37]:
+              - generic [ref=e38]:
+                - generic [ref=e39]: Attractiveness %
+                - generic [ref=e40]: 0+
+              - slider "Attractiveness % 0+" [ref=e41]: "0"
+            - generic [ref=e42]:
+              - generic [ref=e43]:
+                - generic [ref=e44]: Attraction
+                - generic [ref=e45]: 0+
+              - slider "Attraction 0+" [ref=e46]: "0"
+            - generic [ref=e47]:
+              - generic [ref=e48]:
+                - generic [ref=e49]: Background
+                - generic [ref=e50]: 0+
+              - slider "Background 0+" [ref=e51]: "0"
+            - generic [ref=e52]:
+              - generic [ref=e53]:
+                - generic [ref=e54]: Career
+                - generic [ref=e55]: 0+
+              - slider "Career 0+" [ref=e56]: "0"
+            - generic [ref=e57]:
+              - generic [ref=e58]:
+                - generic [ref=e59]: Age
+                - generic [ref=e60]: 0+
+              - slider "Age 0+" [ref=e61]: "0"
+        - paragraph [ref=e63]: 10 of 10 mutual matches
+        - generic [ref=e64]:
+          - link "SU MA 69 Sudarshan × Mav 26 · 26 · Bangalore “A direct, well-read designer who'll match his depth in conversation and never need him to hold her hand through life.” ★ Strong mutual A→B 72 B→A 67 64 attr" [ref=e65] [cursor=pointer]:
+            - /url: /match/31
+            - generic [ref=e66]:
+              - generic [ref=e67]:
+                - img "SU" [ref=e69]
+                - img "MA" [ref=e71]
+              - generic [ref=e72]:
+                - img [ref=e73]
+                - generic [ref=e77]: "69"
+            - generic [ref=e78]:
+              - heading "Sudarshan × Mav" [level=3] [ref=e79]
+              - paragraph [ref=e80]: 26 · 26 · Bangalore
+            - paragraph [ref=e81]: “A direct, well-read designer who'll match his depth in conversation and never need him to hold her hand through life.”
+            - generic [ref=e82]:
+              - generic [ref=e83]: ★ Strong mutual
+              - generic [ref=e84]: A→B 72
+              - generic [ref=e85]: B→A 67
+              - generic [ref=e86]: 64 attr
+          - link "VA AY 69 Vaishnavi × Ayush 32 · 32 · Bangalore “Ambitious and honest with real schedule compatibility — but he'll need to unlock his fun side to match her gushing energy.” ★ Strong mutual A→B 61 B→A 77 67 attr" [ref=e88] [cursor=pointer]:
+            - /url: /match/32
+            - generic [ref=e89]:
+              - generic [ref=e90]:
+                - img "VA" [ref=e92]
+                - img "AY" [ref=e94]
+              - generic [ref=e95]:
+                - img [ref=e96]
+                - generic [ref=e100]: "69"
+            - generic [ref=e101]:
+              - heading "Vaishnavi × Ayush" [level=3] [ref=e102]
+              - paragraph [ref=e103]: 32 · 32 · Bangalore
+            - paragraph [ref=e104]: “Ambitious and honest with real schedule compatibility — but he'll need to unlock his fun side to match her gushing energy.”
+            - generic [ref=e105]:
+              - generic [ref=e106]: ★ Strong mutual
+              - generic [ref=e107]: A→B 61
+              - generic [ref=e108]: B→A 77
+              - generic [ref=e109]: 67 attr
+          - link "SI NS 69 Siddhant × Noopur Singhania 28 · 28 · Bangalore “Two Bangalore careerists who both hate small talk, love the gym, and want a partner with a real life — this one clicks.” ★ Strong mutual A→B 71 B→A 67 62 attr" [ref=e111] [cursor=pointer]:
+            - /url: /match/33
+            - generic [ref=e112]:
+              - generic [ref=e113]:
+                - img "SI" [ref=e115]
+                - img "NS" [ref=e117]
+              - generic [ref=e118]:
+                - img [ref=e119]
+                - generic [ref=e123]: "69"
+            - generic [ref=e124]:
+              - heading "Siddhant × Noopur Singhania" [level=3] [ref=e125]
+              - paragraph [ref=e126]: 28 · 28 · Bangalore
+            - paragraph [ref=e127]: “Two Bangalore careerists who both hate small talk, love the gym, and want a partner with a real life — this one clicks.”
+            - generic [ref=e128]:
+              - generic [ref=e129]: ★ Strong mutual
+              - generic [ref=e130]: A→B 71
+              - generic [ref=e131]: B→A 67
+              - generic [ref=e132]: 62 attr
+          - link "AY SH 66 Ayshi × Sree Hari 27 · 27 · Bangalore “An ambitious, well-read IB guy who cooks fancy meals and wants depth — exactly the serious-energy match she's been circling around.” ★ Strong mutual A→B 68 B→A 64 64 attr" [ref=e134] [cursor=pointer]:
+            - /url: /match/34
+            - generic [ref=e135]:
+              - generic [ref=e136]:
+                - img "AY" [ref=e138]
+                - img "SH" [ref=e140]
+              - generic [ref=e141]:
+                - img [ref=e142]
+                - generic [ref=e146]: "66"
+            - generic [ref=e147]:
+              - heading "Ayshi × Sree Hari" [level=3] [ref=e148]
+              - paragraph [ref=e149]: 27 · 27 · Bangalore
+            - paragraph [ref=e150]: “An ambitious, well-read IB guy who cooks fancy meals and wants depth — exactly the serious-energy match she's been circling around.”
+            - generic [ref=e151]:
+              - generic [ref=e152]: ★ Strong mutual
+              - generic [ref=e153]: A→B 68
+              - generic [ref=e154]: B→A 64
+              - generic [ref=e155]: 64 attr
+          - link "JO SH 66 Joven × Shagufa 26 · 26 · Bangalore “Creative wavelength is real, but her need for closeness may bump hard against his need for space.” ★ Strong mutual A→B 65 B→A 67 63 attr" [ref=e157] [cursor=pointer]:
+            - /url: /match/35
+            - generic [ref=e158]:
+              - generic [ref=e159]:
+                - img "JO" [ref=e161]
+                - img "SH" [ref=e163]
+              - generic [ref=e164]:
+                - img [ref=e165]
+                - generic [ref=e169]: "66"
+            - generic [ref=e170]:
+              - heading "Joven × Shagufa" [level=3] [ref=e171]
+              - paragraph [ref=e172]: 26 · 26 · Bangalore
+            - paragraph [ref=e173]: “Creative wavelength is real, but her need for closeness may bump hard against his need for space.”
+            - generic [ref=e174]:
+              - generic [ref=e175]: ★ Strong mutual
+              - generic [ref=e176]: A→B 65
+              - generic [ref=e177]: B→A 67
+              - generic [ref=e178]: 63 attr
+          - link "MU TS 65 Muneer × Thamreen Saleem 23 · 23 · Bangalore “Creative Bangalore peers with real chemistry potential — if he can slow down enough to meet her emotional depth.” ★ Strong mutual A→B 64 B→A 67 63 attr" [ref=e180] [cursor=pointer]:
+            - /url: /match/36
+            - generic [ref=e181]:
+              - generic [ref=e182]:
+                - img "MU" [ref=e184]
+                - img "TS" [ref=e186]
+              - generic [ref=e187]:
+                - img [ref=e188]
+                - generic [ref=e192]: "65"
+            - generic [ref=e193]:
+              - heading "Muneer × Thamreen Saleem" [level=3] [ref=e194]
+              - paragraph [ref=e195]: 23 · 23 · Bangalore
+            - paragraph [ref=e196]: “Creative Bangalore peers with real chemistry potential — if he can slow down enough to meet her emotional depth.”
+            - generic [ref=e197]:
+              - generic [ref=e198]: ★ Strong mutual
+              - generic [ref=e199]: A→B 64
+              - generic [ref=e200]: B→A 67
+              - generic [ref=e201]: 63 attr
+          - link "SC NS 63 Swapnil Chand × Nagendra Shekhawat 24 · 24 · Bangalore “A Bangalore-based creative building his own studio who shares your love of health, travel, and zero drama — worth a coffee to find out if the energy clicks.” ★ Strong mutual A→B 62 B→A 64 55 attr" [ref=e203] [cursor=pointer]:
+            - /url: /match/37
+            - generic [ref=e204]:
+              - generic [ref=e205]:
+                - img "SC" [ref=e207]
+                - img "NS" [ref=e209]
+              - generic [ref=e210]:
+                - img [ref=e211]
+                - generic [ref=e215]: "63"
+            - generic [ref=e216]:
+              - heading "Swapnil Chand × Nagendra Shekhawat" [level=3] [ref=e217]
+              - paragraph [ref=e218]: 24 · 24 · Bangalore
+            - paragraph [ref=e219]: “A Bangalore-based creative building his own studio who shares your love of health, travel, and zero drama — worth a coffee to find out if the energy clicks.”
+            - generic [ref=e220]:
+              - generic [ref=e221]: ★ Strong mutual
+              - generic [ref=e222]: A→B 62
+              - generic [ref=e223]: B→A 64
+              - generic [ref=e224]: 55 attr
+          - link "SJ AG 63 Sushil Jain × Aryan Gupta 26 · 26 · Bangalore “Two Bangalore professionals with compatible relationship pacing — if the candidate's guarded shell doesn't register as the emotional distance the subject dreads.” ★ Strong mutual A→B 63 B→A 63 58 attr" [ref=e226] [cursor=pointer]:
+            - /url: /match/38
+            - generic [ref=e227]:
+              - generic [ref=e228]:
+                - img "SJ" [ref=e230]
+                - img "AG" [ref=e232]
+              - generic [ref=e233]:
+                - img [ref=e234]
+                - generic [ref=e238]: "63"
+            - generic [ref=e239]:
+              - heading "Sushil Jain × Aryan Gupta" [level=3] [ref=e240]
+              - paragraph [ref=e241]: 26 · 26 · Bangalore
+            - paragraph [ref=e242]: “Two Bangalore professionals with compatible relationship pacing — if the candidate's guarded shell doesn't register as the emotional distance the subject dreads.”
+            - generic [ref=e243]:
+              - generic [ref=e244]: ★ Strong mutual
+              - generic [ref=e245]: A→B 63
+              - generic [ref=e246]: B→A 63
+              - generic [ref=e247]: 58 attr
+          - link "_I AD 63 _iamrrs_ × Aditi 29 · 29 · Bangalore “Same city, same career drive, same age — but she wants fireworks and he builds fires slowly, so the spark depends entirely on patience.” ★ Strong mutual A→B 66 B→A 59 65 attr" [ref=e249] [cursor=pointer]:
+            - /url: /match/39
+            - generic [ref=e250]:
+              - generic [ref=e251]:
+                - img "_I" [ref=e253]
+                - img "AD" [ref=e255]
+              - generic [ref=e256]:
+                - img [ref=e257]
+                - generic [ref=e261]: "63"
+            - generic [ref=e262]:
+              - heading "_iamrrs_ × Aditi" [level=3] [ref=e263]
+              - paragraph [ref=e264]: 29 · 29 · Bangalore
+            - paragraph [ref=e265]: “Same city, same career drive, same age — but she wants fireworks and he builds fires slowly, so the spark depends entirely on patience.”
+            - generic [ref=e266]:
+              - generic [ref=e267]: ★ Strong mutual
+              - generic [ref=e268]: A→B 66
+              - generic [ref=e269]: B→A 59
+              - generic [ref=e270]: 65 attr
+          - link "AY PA 61 Ayshi × Paranjay 27 · 27 · Bangalore “He's the high-energy triathlete who might finally match her depth — if he can keep up with her mind, not just her pace.” ★ Strong mutual A→B 59 B→A 62 65 attr" [ref=e272] [cursor=pointer]:
+            - /url: /match/40
+            - generic [ref=e273]:
+              - generic [ref=e274]:
+                - img "AY" [ref=e276]
+                - img "PA" [ref=e278]
+              - generic [ref=e279]:
+                - img [ref=e280]
+                - generic [ref=e284]: "61"
+            - generic [ref=e285]:
+              - heading "Ayshi × Paranjay" [level=3] [ref=e286]
+              - paragraph [ref=e287]: 27 · 27 · Bangalore
+            - paragraph [ref=e288]: “He's the high-energy triathlete who might finally match her depth — if he can keep up with her mind, not just her pace.”
+            - generic [ref=e289]:
+              - generic [ref=e290]: ★ Strong mutual
+              - generic [ref=e291]: A→B 59
+              - generic [ref=e292]: B→A 62
+              - generic [ref=e293]: 65 attr
+  - alert [ref=e295]

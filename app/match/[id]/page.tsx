@@ -174,8 +174,8 @@ export default async function MatchDetail({ params }: { params: { id: string } }
 
       {/* Profiles */}
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-        <ProfileCard u={a} sub={a.readable_username ? `@${a.readable_username}` : a.pseudonym ?? ""} />
-        <ProfileCard u={b} sub={b.readable_username ? `@${b.readable_username}` : b.pseudonym ?? ""} />
+        <ProfileCard u={a} sub={a.location_city ?? ""} />
+        <ProfileCard u={b} sub={b.location_city ?? ""} />
       </div>
     </div>
   );

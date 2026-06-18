@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { photoUrl, initials } from "../lib/format";
+import { photoUrl, pickPhoto, initials } from "../lib/format";
 
 export function Avatar({
   user,
@@ -13,8 +13,8 @@ export function Avatar({
   ring?: boolean;
 }) {
   const [failed, setFailed] = useState(false);
-  const url = photoUrl(user.photo_paths_json?.[0]);
-  const ini = initials(user.full_name ?? null, user.readable_username ?? user.pseudonym ?? null);
+  const url = photoUrl(pickPhoto(user.photo_paths_json));
+  const ini = initials(user.pseudonym ?? null, null);
   const bg = user.gender === "woman" ? "#dedbff" : user.gender === "man" ? "#dbf7ff" : "#ece5db";
 
   return (

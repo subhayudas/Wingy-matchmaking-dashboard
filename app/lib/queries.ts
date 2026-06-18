@@ -176,6 +176,83 @@ export async function getExcluded(runId: string): Promise<MmUser[]> {
   );
 }
 
+export interface RankedCandidate {
+  pair: MmPair;
+  candidate: MmUser;
+  match_id: number | null; // confirmed mutual match id, if one exists
+}
+
+export interface PersonRanking {
+  user: MmUser;
+  candidates: RankedCandidate[]; // sorted by rank, capped at top 5
+  best: number | null; // best candidate final_score
+  avgTop: number | null; // mean final_score across the top candidates
+  strongCount: number; // # of candidates with a "strong" verdict
+  evaluated: number; // total candidates evaluated for this person (pre-cap)
+}
+
+const TOP_N = 5;
+
+/**
+ * Top-N ranked matches for EVERY eligible person in the pool (directional,
+ * from mm_pair) — not just confirmed mutual matches. Each person's candidates
+ * are ordered by their stored rank and capped at the top 5.
+ */
+export async function getRankings(runId: string): Promise<PersonRanking[]> {
+  const [pool, allUsers, pairs, matches] = await Promise.all([
+    q<MmUser>("SELECT * FROM mm_user WHERE run_id=$1 AND eligible=true", [runId]),
+    q<MmUser>("SELECT * FROM mm_user WHERE run_id=$1", [runId]),
+    q<MmPair>(
+      "SELECT * FROM mm_pair WHERE run_id=$1 ORDER BY subject_id, rank ASC NULLS LAST, final_score DESC NULLS LAST",
+      [runId]
+    ),
+    q<MmMatch>("SELECT id, user_a, user_b FROM mm_match WHERE run_id=$1", [runId]),
+  ]);
+
+  const byId = new Map(allUsers.map((u) => [u.user_id, u]));
+  const matchByPair = new Map<string, number>();
+  for (const m of matches) {
+    matchByPair.set(`${m.user_a}|${m.user_b}`, m.id);
+    matchByPair.set(`${m.user_b}|${m.user_a}`, m.id);
+  }
+
+  const bySubject = new Map<string, MmPair[]>();
+  for (const p of pairs) {
+    const arr = bySubject.get(p.subject_id);
+    if (arr) arr.push(p);
+    else bySubject.set(p.subject_id, [p]);
+  }
+
+  return pool.map((user) => {
+    const all = bySubject.get(user.user_id) ?? [];
+    const top = all.slice(0, TOP_N);
+    const candidates: RankedCandidate[] = top
+      .map((pair) => {
+        const candidate = byId.get(pair.candidate_id);
+        if (!candidate) return null;
+        return {
+          pair,
+          candidate,
+          match_id: matchByPair.get(`${user.user_id}|${pair.candidate_id}`) ?? null,
+        };
+      })
+      .filter((c): c is RankedCandidate => c !== null);
+
+    const scores = candidates
+      .map((c) => c.pair.final_score)
+      .filter((s): s is number => s != null);
+
+    return {
+      user,
+      candidates,
+      best: scores.length ? Math.max(...scores) : null,
+      avgTop: scores.length ? scores.reduce((a, b) => a + b, 0) / scores.length : null,
+      strongCount: candidates.filter((c) => c.pair.verdict === "strong").length,
+      evaluated: all.length,
+    };
+  });
+}
+
 /** Top mutual candidates for a user (from confirmed matches). */
 export async function getUserMatches(runId: string, userId: string) {
   const matches = await q<MmMatch>(

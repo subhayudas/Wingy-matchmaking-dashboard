@@ -1,0 +1,580 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Wingy Matchmaking Studio" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: Wingy
+        - generic [ref=e6]: Matchmaking Studio
+      - navigation [ref=e7]:
+        - link "Matches" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "Pool" [ref=e9] [cursor=pointer]:
+          - /url: /pool
+        - link "Excluded" [ref=e10] [cursor=pointer]:
+          - /url: /excluded
+        - link "Run Overview" [ref=e11] [cursor=pointer]:
+          - /url: /overview
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e15]:
+        - paragraph [ref=e16]: Run run_raw · raw-only
+        - heading "Mutual Matches" [level=1] [ref=e17]
+        - paragraph [ref=e18]: Every pair here is mutual, gate-clean, age-valid and LLM-approved in both directions — people who would genuinely want to date each other. Filter, search, and open any match for the full reasoning.
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - textbox "Search name, username, city…" [ref=e22]
+            - generic [ref=e23]:
+              - button "all" [ref=e24] [cursor=pointer]
+              - button "woman" [ref=e25] [cursor=pointer]
+              - button "man" [ref=e26] [cursor=pointer]
+            - button "★ Strong mutual" [ref=e27] [cursor=pointer]
+            - combobox [ref=e28] [cursor=pointer]:
+              - 'option "Sort: Best overall" [selected]'
+              - 'option "Sort: Attraction"'
+              - 'option "Sort: Career"'
+            - button "Export CSV" [ref=e29] [cursor=pointer]
+          - generic [ref=e30]:
+            - generic [ref=e31]:
+              - generic [ref=e32]:
+                - generic [ref=e33]: Min score
+                - generic [ref=e34]: 0+
+              - slider "Min score 0+" [ref=e35]: "0"
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - generic [ref=e38]: Attractiveness %
+                - generic [ref=e39]: 0+
+              - slider "Attractiveness % 0+" [ref=e40]: "0"
+            - generic [ref=e41]:
+              - generic [ref=e42]:
+                - generic [ref=e43]: Attraction
+                - generic [ref=e44]: 0+
+              - slider "Attraction 0+" [ref=e45]: "0"
+            - generic [ref=e46]:
+              - generic [ref=e47]:
+                - generic [ref=e48]: Background
+                - generic [ref=e49]: 0+
+              - slider "Background 0+" [ref=e50]: "0"
+            - generic [ref=e51]:
+              - generic [ref=e52]:
+                - generic [ref=e53]: Career
+                - generic [ref=e54]: 0+
+              - slider "Career 0+" [ref=e55]: "0"
+            - generic [ref=e56]:
+              - generic [ref=e57]:
+                - generic [ref=e58]: Age
+                - generic [ref=e59]: 0+
+              - slider "Age 0+" [ref=e60]: "0"
+        - paragraph [ref=e62]: 30 of 30 mutual matches
+        - generic [ref=e63]:
+          - link "SC SH 66 Swapnil Chand × Shriman 24 · 24 · Bangalore ★ Strong mutual A→B 66 B→A 67 62 attr" [ref=e64] [cursor=pointer]:
+            - /url: /match/1
+            - generic [ref=e65]:
+              - generic [ref=e66]:
+                - generic [ref=e68]: SC
+                - generic [ref=e70]: SH
+              - generic [ref=e71]:
+                - img [ref=e72]
+                - generic [ref=e76]: "66"
+            - generic [ref=e77]:
+              - heading "Swapnil Chand × Shriman" [level=3] [ref=e78]
+              - paragraph [ref=e79]: 24 · 24 · Bangalore
+            - generic [ref=e80]:
+              - generic [ref=e81]: ★ Strong mutual
+              - generic [ref=e82]: A→B 66
+              - generic [ref=e83]: B→A 67
+              - generic [ref=e84]: 62 attr
+          - link "AD SA 65 Ayush Dutta × Suraj Agrawal 26 · 26 · Bangalore ★ Strong mutual A→B 66 B→A 65 60 attr" [ref=e86] [cursor=pointer]:
+            - /url: /match/2
+            - generic [ref=e87]:
+              - generic [ref=e88]:
+                - generic [ref=e90]: AD
+                - generic [ref=e92]: SA
+              - generic [ref=e93]:
+                - img [ref=e94]
+                - generic [ref=e98]: "65"
+            - generic [ref=e99]:
+              - heading "Ayush Dutta × Suraj Agrawal" [level=3] [ref=e100]
+              - paragraph [ref=e101]: 26 · 26 · Bangalore
+            - generic [ref=e102]:
+              - generic [ref=e103]: ★ Strong mutual
+              - generic [ref=e104]: A→B 66
+              - generic [ref=e105]: B→A 65
+              - generic [ref=e106]: 60 attr
+          - link "SA SJ 65 Suraj Agrawal × Sushil Jain 26 · 26 · Bangalore ★ Strong mutual A→B 65 B→A 66 57 attr" [ref=e108] [cursor=pointer]:
+            - /url: /match/3
+            - generic [ref=e109]:
+              - generic [ref=e110]:
+                - generic [ref=e112]: SA
+                - generic [ref=e114]: SJ
+              - generic [ref=e115]:
+                - img [ref=e116]
+                - generic [ref=e120]: "65"
+            - generic [ref=e121]:
+              - heading "Suraj Agrawal × Sushil Jain" [level=3] [ref=e122]
+              - paragraph [ref=e123]: 26 · 26 · Bangalore
+            - generic [ref=e124]:
+              - generic [ref=e125]: ★ Strong mutual
+              - generic [ref=e126]: A→B 65
+              - generic [ref=e127]: B→A 66
+              - generic [ref=e128]: 57 attr
+          - link "SA AG 65 Suraj Agrawal × Aryan Gupta 26 · 26 · Bangalore ★ Strong mutual A→B 65 B→A 65 58 attr" [ref=e130] [cursor=pointer]:
+            - /url: /match/4
+            - generic [ref=e131]:
+              - generic [ref=e132]:
+                - generic [ref=e134]: SA
+                - generic [ref=e136]: AG
+              - generic [ref=e137]:
+                - img [ref=e138]
+                - generic [ref=e142]: "65"
+            - generic [ref=e143]:
+              - heading "Suraj Agrawal × Aryan Gupta" [level=3] [ref=e144]
+              - paragraph [ref=e145]: 26 · 26 · Bangalore
+            - generic [ref=e146]:
+              - generic [ref=e147]: ★ Strong mutual
+              - generic [ref=e148]: A→B 65
+              - generic [ref=e149]: B→A 65
+              - generic [ref=e150]: 58 attr
+          - link "MS HE 65 Mohan SP × Herschelle 29 · 29 · Bangalore ★ Strong mutual A→B 66 B→A 64 57 attr" [ref=e152] [cursor=pointer]:
+            - /url: /match/5
+            - generic [ref=e153]:
+              - generic [ref=e154]:
+                - generic [ref=e156]: MS
+                - generic [ref=e158]: HE
+              - generic [ref=e159]:
+                - img [ref=e160]
+                - generic [ref=e164]: "65"
+            - generic [ref=e165]:
+              - heading "Mohan SP × Herschelle" [level=3] [ref=e166]
+              - paragraph [ref=e167]: 29 · 29 · Bangalore
+            - generic [ref=e168]:
+              - generic [ref=e169]: ★ Strong mutual
+              - generic [ref=e170]: A→B 66
+              - generic [ref=e171]: B→A 64
+              - generic [ref=e172]: 57 attr
+          - link "SJ AG 65 Sushil Jain × Aryan Gupta 26 · 26 · Bangalore ★ Strong mutual A→B 65 B→A 65 58 attr" [ref=e174] [cursor=pointer]:
+            - /url: /match/6
+            - generic [ref=e175]:
+              - generic [ref=e176]:
+                - generic [ref=e178]: SJ
+                - generic [ref=e180]: AG
+              - generic [ref=e181]:
+                - img [ref=e182]
+                - generic [ref=e186]: "65"
+            - generic [ref=e187]:
+              - heading "Sushil Jain × Aryan Gupta" [level=3] [ref=e188]
+              - paragraph [ref=e189]: 26 · 26 · Bangalore
+            - generic [ref=e190]:
+              - generic [ref=e191]: ★ Strong mutual
+              - generic [ref=e192]: A→B 65
+              - generic [ref=e193]: B→A 65
+              - generic [ref=e194]: 58 attr
+          - link "PS MS 65 Pranav Singh × Mohan SP 29 · 29 · Bangalore ★ Strong mutual A→B 65 B→A 65 59 attr" [ref=e196] [cursor=pointer]:
+            - /url: /match/7
+            - generic [ref=e197]:
+              - generic [ref=e198]:
+                - generic [ref=e200]: PS
+                - generic [ref=e202]: MS
+              - generic [ref=e203]:
+                - img [ref=e204]
+                - generic [ref=e208]: "65"
+            - generic [ref=e209]:
+              - heading "Pranav Singh × Mohan SP" [level=3] [ref=e210]
+              - paragraph [ref=e211]: 29 · 29 · Bangalore
+            - generic [ref=e212]:
+              - generic [ref=e213]: ★ Strong mutual
+              - generic [ref=e214]: A→B 65
+              - generic [ref=e215]: B→A 65
+              - generic [ref=e216]: 59 attr
+          - link "AD SJ 64 Ayush Dutta × Sushil Jain 26 · 26 · Bangalore ★ Strong mutual A→B 64 B→A 65 57 attr" [ref=e218] [cursor=pointer]:
+            - /url: /match/8
+            - generic [ref=e219]:
+              - generic [ref=e220]:
+                - generic [ref=e222]: AD
+                - generic [ref=e224]: SJ
+              - generic [ref=e225]:
+                - img [ref=e226]
+                - generic [ref=e230]: "64"
+            - generic [ref=e231]:
+              - heading "Ayush Dutta × Sushil Jain" [level=3] [ref=e232]
+              - paragraph [ref=e233]: 26 · 26 · Bangalore
+            - generic [ref=e234]:
+              - generic [ref=e235]: ★ Strong mutual
+              - generic [ref=e236]: A→B 64
+              - generic [ref=e237]: B→A 65
+              - generic [ref=e238]: 57 attr
+          - link "SC NS 64 Swapnil Chand × Nagendra Shekhawat 24 · 24 · Bangalore ★ Strong mutual A→B 62 B→A 66 55 attr" [ref=e240] [cursor=pointer]:
+            - /url: /match/9
+            - generic [ref=e241]:
+              - generic [ref=e242]:
+                - generic [ref=e244]: SC
+                - generic [ref=e246]: NS
+              - generic [ref=e247]:
+                - img [ref=e248]
+                - generic [ref=e252]: "64"
+            - generic [ref=e253]:
+              - heading "Swapnil Chand × Nagendra Shekhawat" [level=3] [ref=e254]
+              - paragraph [ref=e255]: 24 · 24 · Bangalore
+            - generic [ref=e256]:
+              - generic [ref=e257]: ★ Strong mutual
+              - generic [ref=e258]: A→B 62
+              - generic [ref=e259]: B→A 66
+              - generic [ref=e260]: 55 attr
+          - link "NS SH 64 Nagendra Shekhawat × Shriman 24 · 24 · Bangalore ★ Strong mutual A→B 65 B→A 63 55 attr" [ref=e262] [cursor=pointer]:
+            - /url: /match/10
+            - generic [ref=e263]:
+              - generic [ref=e264]:
+                - generic [ref=e266]: NS
+                - generic [ref=e268]: SH
+              - generic [ref=e269]:
+                - img [ref=e270]
+                - generic [ref=e274]: "64"
+            - generic [ref=e275]:
+              - heading "Nagendra Shekhawat × Shriman" [level=3] [ref=e276]
+              - paragraph [ref=e277]: 24 · 24 · Bangalore
+            - generic [ref=e278]:
+              - generic [ref=e279]: ★ Strong mutual
+              - generic [ref=e280]: A→B 65
+              - generic [ref=e281]: B→A 63
+              - generic [ref=e282]: 55 attr
+          - link "PS HE 64 Pranav Singh × Herschelle 29 · 29 · Bangalore ★ Strong mutual A→B 65 B→A 62 57 attr" [ref=e284] [cursor=pointer]:
+            - /url: /match/11
+            - generic [ref=e285]:
+              - generic [ref=e286]:
+                - generic [ref=e288]: PS
+                - generic [ref=e290]: HE
+              - generic [ref=e291]:
+                - img [ref=e292]
+                - generic [ref=e296]: "64"
+            - generic [ref=e297]:
+              - heading "Pranav Singh × Herschelle" [level=3] [ref=e298]
+              - paragraph [ref=e299]: 29 · 29 · Bangalore
+            - generic [ref=e300]:
+              - generic [ref=e301]: ★ Strong mutual
+              - generic [ref=e302]: A→B 65
+              - generic [ref=e303]: B→A 62
+              - generic [ref=e304]: 57 attr
+          - link "VA AY 62 Vaishnavi × Ayush 32 · 32 · Bangalore ★ Strong mutual A→B 55 B→A 69 67 attr" [ref=e306] [cursor=pointer]:
+            - /url: /match/12
+            - generic [ref=e307]:
+              - generic [ref=e308]:
+                - generic [ref=e310]: VA
+                - generic [ref=e312]: AY
+              - generic [ref=e313]:
+                - img [ref=e314]
+                - generic [ref=e318]: "62"
+            - generic [ref=e319]:
+              - heading "Vaishnavi × Ayush" [level=3] [ref=e320]
+              - paragraph [ref=e321]: 32 · 32 · Bangalore
+            - generic [ref=e322]:
+              - generic [ref=e323]: ★ Strong mutual
+              - generic [ref=e324]: A→B 55
+              - generic [ref=e325]: B→A 69
+              - generic [ref=e326]: 67 attr
+          - link "_I AD 61 _iamrrs_ × Aditi 29 · 29 · Bangalore ★ Strong mutual A→B 67 B→A 55 65 attr" [ref=e328] [cursor=pointer]:
+            - /url: /match/13
+            - generic [ref=e329]:
+              - generic [ref=e330]:
+                - generic [ref=e332]: _I
+                - generic [ref=e334]: AD
+              - generic [ref=e335]:
+                - img [ref=e336]
+                - generic [ref=e340]: "61"
+            - generic [ref=e341]:
+              - heading "_iamrrs_ × Aditi" [level=3] [ref=e342]
+              - paragraph [ref=e343]: 29 · 29 · Bangalore
+            - generic [ref=e344]:
+              - generic [ref=e345]: ★ Strong mutual
+              - generic [ref=e346]: A→B 67
+              - generic [ref=e347]: B→A 55
+              - generic [ref=e348]: 65 attr
+          - link "JO SH 61 Joven × Shagufa 26 · 26 · Bangalore ★ Strong mutual A→B 67 B→A 55 63 attr" [ref=e350] [cursor=pointer]:
+            - /url: /match/14
+            - generic [ref=e351]:
+              - generic [ref=e352]:
+                - generic [ref=e354]: JO
+                - generic [ref=e356]: SH
+              - generic [ref=e357]:
+                - img [ref=e358]
+                - generic [ref=e362]: "61"
+            - generic [ref=e363]:
+              - heading "Joven × Shagufa" [level=3] [ref=e364]
+              - paragraph [ref=e365]: 26 · 26 · Bangalore
+            - generic [ref=e366]:
+              - generic [ref=e367]: ★ Strong mutual
+              - generic [ref=e368]: A→B 67
+              - generic [ref=e369]: B→A 55
+              - generic [ref=e370]: 63 attr
+          - link "SI NS 61 Siddhant × Noopur Singhania 28 · 28 · Bangalore ★ Strong mutual A→B 67 B→A 55 62 attr" [ref=e372] [cursor=pointer]:
+            - /url: /match/15
+            - generic [ref=e373]:
+              - generic [ref=e374]:
+                - generic [ref=e376]: SI
+                - generic [ref=e378]: NS
+              - generic [ref=e379]:
+                - img [ref=e380]
+                - generic [ref=e384]: "61"
+            - generic [ref=e385]:
+              - heading "Siddhant × Noopur Singhania" [level=3] [ref=e386]
+              - paragraph [ref=e387]: 28 · 28 · Bangalore
+            - generic [ref=e388]:
+              - generic [ref=e389]: ★ Strong mutual
+              - generic [ref=e390]: A→B 67
+              - generic [ref=e391]: B→A 55
+              - generic [ref=e392]: 62 attr
+          - link "AY SH 61 Ayshi × Sree Hari 27 · 27 · Bangalore ★ Strong mutual A→B 55 B→A 66 64 attr" [ref=e394] [cursor=pointer]:
+            - /url: /match/16
+            - generic [ref=e395]:
+              - generic [ref=e396]:
+                - generic [ref=e398]: AY
+                - generic [ref=e400]: SH
+              - generic [ref=e401]:
+                - img [ref=e402]
+                - generic [ref=e406]: "61"
+            - generic [ref=e407]:
+              - heading "Ayshi × Sree Hari" [level=3] [ref=e408]
+              - paragraph [ref=e409]: 27 · 27 · Bangalore
+            - generic [ref=e410]:
+              - generic [ref=e411]: ★ Strong mutual
+              - generic [ref=e412]: A→B 55
+              - generic [ref=e413]: B→A 66
+              - generic [ref=e414]: 64 attr
+          - link "SU MA 61 Sudarshan × Mav 26 · 26 · Bangalore ★ Strong mutual A→B 66 B→A 55 64 attr" [ref=e416] [cursor=pointer]:
+            - /url: /match/17
+            - generic [ref=e417]:
+              - generic [ref=e418]:
+                - generic [ref=e420]: SU
+                - generic [ref=e422]: MA
+              - generic [ref=e423]:
+                - img [ref=e424]
+                - generic [ref=e428]: "61"
+            - generic [ref=e429]:
+              - heading "Sudarshan × Mav" [level=3] [ref=e430]
+              - paragraph [ref=e431]: 26 · 26 · Bangalore
+            - generic [ref=e432]:
+              - generic [ref=e433]: ★ Strong mutual
+              - generic [ref=e434]: A→B 66
+              - generic [ref=e435]: B→A 55
+              - generic [ref=e436]: 64 attr
+          - link "AY PA 60 Ayshi × Paranjay 27 · 27 · Bangalore ★ Strong mutual A→B 56 B→A 65 65 attr" [ref=e438] [cursor=pointer]:
+            - /url: /match/18
+            - generic [ref=e439]:
+              - generic [ref=e440]:
+                - generic [ref=e442]: AY
+                - generic [ref=e444]: PA
+              - generic [ref=e445]:
+                - img [ref=e446]
+                - generic [ref=e450]: "60"
+            - generic [ref=e451]:
+              - heading "Ayshi × Paranjay" [level=3] [ref=e452]
+              - paragraph [ref=e453]: 27 · 27 · Bangalore
+            - generic [ref=e454]:
+              - generic [ref=e455]: ★ Strong mutual
+              - generic [ref=e456]: A→B 56
+              - generic [ref=e457]: B→A 65
+              - generic [ref=e458]: 65 attr
+          - link "SC AS 60 Swapnil Chand × Aswin 24 · 25 · Bangalore ★ Strong mutual A→B 60 B→A 61 65 attr" [ref=e460] [cursor=pointer]:
+            - /url: /match/19
+            - generic [ref=e461]:
+              - generic [ref=e462]:
+                - generic [ref=e464]: SC
+                - generic [ref=e466]: AS
+              - generic [ref=e467]:
+                - img [ref=e468]
+                - generic [ref=e472]: "60"
+            - generic [ref=e473]:
+              - heading "Swapnil Chand × Aswin" [level=3] [ref=e474]
+              - paragraph [ref=e475]: 24 · 25 · Bangalore
+            - generic [ref=e476]:
+              - generic [ref=e477]: ★ Strong mutual
+              - generic [ref=e478]: A→B 60
+              - generic [ref=e479]: B→A 61
+              - generic [ref=e480]: 65 attr
+          - link "MU TS 60 Muneer × Thamreen Saleem 23 · 23 · Bangalore ★ Strong mutual A→B 65 B→A 55 63 attr" [ref=e482] [cursor=pointer]:
+            - /url: /match/20
+            - generic [ref=e483]:
+              - generic [ref=e484]:
+                - generic [ref=e486]: MU
+                - generic [ref=e488]: TS
+              - generic [ref=e489]:
+                - img [ref=e490]
+                - generic [ref=e494]: "60"
+            - generic [ref=e495]:
+              - heading "Muneer × Thamreen Saleem" [level=3] [ref=e496]
+              - paragraph [ref=e497]: 23 · 23 · Bangalore
+            - generic [ref=e498]:
+              - generic [ref=e499]: ★ Strong mutual
+              - generic [ref=e500]: A→B 65
+              - generic [ref=e501]: B→A 55
+              - generic [ref=e502]: 63 attr
+          - link "SH AF 60 Shriman × afraz 24 · 23 · Bangalore ★ Strong mutual A→B 60 B→A 60 62 attr" [ref=e504] [cursor=pointer]:
+            - /url: /match/21
+            - generic [ref=e505]:
+              - generic [ref=e506]:
+                - generic [ref=e508]: SH
+                - generic [ref=e510]: AF
+              - generic [ref=e511]:
+                - img [ref=e512]
+                - generic [ref=e516]: "60"
+            - generic [ref=e517]:
+              - heading "Shriman × afraz" [level=3] [ref=e518]
+              - paragraph [ref=e519]: 24 · 23 · Bangalore
+            - generic [ref=e520]:
+              - generic [ref=e521]: ★ Strong mutual
+              - generic [ref=e522]: A→B 60
+              - generic [ref=e523]: B→A 60
+              - generic [ref=e524]: 62 attr
+          - link "SM SH 59 Siddharth Manjrekar × Shriman 24 · 24 ★ Strong mutual A→B 60 B→A 59 59 attr" [ref=e526] [cursor=pointer]:
+            - /url: /match/22
+            - generic [ref=e527]:
+              - generic [ref=e528]:
+                - generic [ref=e530]: SM
+                - generic [ref=e532]: SH
+              - generic [ref=e533]:
+                - img [ref=e534]
+                - generic [ref=e538]: "59"
+            - generic [ref=e539]:
+              - heading "Siddharth Manjrekar × Shriman" [level=3] [ref=e540]
+              - paragraph [ref=e541]: 24 · 24
+            - generic [ref=e542]:
+              - generic [ref=e543]: ★ Strong mutual
+              - generic [ref=e544]: A→B 60
+              - generic [ref=e545]: B→A 59
+              - generic [ref=e546]: 59 attr
+          - link "PA RJ 59 Paranjay × Riya Jain 27 · 27 · Bangalore ★ Strong mutual A→B 63 B→A 56 58 attr" [ref=e548] [cursor=pointer]:
+            - /url: /match/23
+            - generic [ref=e549]:
+              - generic [ref=e550]:
+                - generic [ref=e552]: PA
+                - generic [ref=e554]: RJ
+              - generic [ref=e555]:
+                - img [ref=e556]
+                - generic [ref=e560]: "59"
+            - generic [ref=e561]:
+              - heading "Paranjay × Riya Jain" [level=3] [ref=e562]
+              - paragraph [ref=e563]: 27 · 27 · Bangalore
+            - generic [ref=e564]:
+              - generic [ref=e565]: ★ Strong mutual
+              - generic [ref=e566]: A→B 63
+              - generic [ref=e567]: B→A 56
+              - generic [ref=e568]: 58 attr
+          - link "SM YU 59 Siddharth Manjrekar × yugshahh 24 · 24 ★ Strong mutual A→B 59 B→A 59 58 attr" [ref=e570] [cursor=pointer]:
+            - /url: /match/24
+            - generic [ref=e571]:
+              - generic [ref=e572]:
+                - generic [ref=e574]: SM
+                - generic [ref=e576]: YU
+              - generic [ref=e577]:
+                - img [ref=e578]
+                - generic [ref=e582]: "59"
+            - generic [ref=e583]:
+              - heading "Siddharth Manjrekar × yugshahh" [level=3] [ref=e584]
+              - paragraph [ref=e585]: 24 · 24
+            - generic [ref=e586]:
+              - generic [ref=e587]: ★ Strong mutual
+              - generic [ref=e588]: A→B 59
+              - generic [ref=e589]: B→A 59
+              - generic [ref=e590]: 58 attr
+          - link "NS YU 59 Nagendra Shekhawat × yugshahh 24 · 24 · Bangalore ★ Strong mutual A→B 59 B→A 59 57 attr" [ref=e592] [cursor=pointer]:
+            - /url: /match/25
+            - generic [ref=e593]:
+              - generic [ref=e594]:
+                - generic [ref=e596]: NS
+                - generic [ref=e598]: YU
+              - generic [ref=e599]:
+                - img [ref=e600]
+                - generic [ref=e604]: "59"
+            - generic [ref=e605]:
+              - heading "Nagendra Shekhawat × yugshahh" [level=3] [ref=e606]
+              - paragraph [ref=e607]: 24 · 24 · Bangalore
+            - generic [ref=e608]:
+              - generic [ref=e609]: ★ Strong mutual
+              - generic [ref=e610]: A→B 59
+              - generic [ref=e611]: B→A 59
+              - generic [ref=e612]: 57 attr
+          - link "SC AF 59 Swapnil Chand × afraz 24 · 23 · Bangalore ★ Strong mutual A→B 58 B→A 59 61 attr" [ref=e614] [cursor=pointer]:
+            - /url: /match/26
+            - generic [ref=e615]:
+              - generic [ref=e616]:
+                - generic [ref=e618]: SC
+                - generic [ref=e620]: AF
+              - generic [ref=e621]:
+                - img [ref=e622]
+                - generic [ref=e626]: "59"
+            - generic [ref=e627]:
+              - heading "Swapnil Chand × afraz" [level=3] [ref=e628]
+              - paragraph [ref=e629]: 24 · 23 · Bangalore
+            - generic [ref=e630]:
+              - generic [ref=e631]: ★ Strong mutual
+              - generic [ref=e632]: A→B 58
+              - generic [ref=e633]: B→A 59
+              - generic [ref=e634]: 61 attr
+          - link "AS SS 58 Aakash Sarin × Sai Srivatsav 28 · 28 ★ Strong mutual A→B 58 B→A 58 58 attr" [ref=e636] [cursor=pointer]:
+            - /url: /match/27
+            - generic [ref=e637]:
+              - generic [ref=e638]:
+                - img "AS" [ref=e640]
+                - img "SS" [ref=e642]
+              - generic [ref=e643]:
+                - img [ref=e644]
+                - generic [ref=e648]: "58"
+            - generic [ref=e649]:
+              - heading "Aakash Sarin × Sai Srivatsav" [level=3] [ref=e650]
+              - paragraph [ref=e651]: 28 · 28
+            - generic [ref=e652]:
+              - generic [ref=e653]: ★ Strong mutual
+              - generic [ref=e654]: A→B 58
+              - generic [ref=e655]: B→A 58
+              - generic [ref=e656]: 58 attr
+          - link "LO RJ 58 longtimenoshree × Riya Jain 28 · 27 · Bangalore ★ Strong mutual A→B 57 B→A 59 58 attr" [ref=e658] [cursor=pointer]:
+            - /url: /match/28
+            - generic [ref=e659]:
+              - generic [ref=e660]:
+                - img "LO" [ref=e662]
+                - generic [ref=e664]: RJ
+              - generic [ref=e665]:
+                - img [ref=e666]
+                - generic [ref=e670]: "58"
+            - generic [ref=e671]:
+              - heading "longtimenoshree × Riya Jain" [level=3] [ref=e672]
+              - paragraph [ref=e673]: 28 · 27 · Bangalore
+            - generic [ref=e674]:
+              - generic [ref=e675]: ★ Strong mutual
+              - generic [ref=e676]: A→B 57
+              - generic [ref=e677]: B→A 59
+              - generic [ref=e678]: 58 attr
+          - link "MA RG 57 Mayank Aggarwal × Ranveer Gandhi 27 · 27 ★ Strong mutual A→B 58 B→A 56 56 attr" [ref=e680] [cursor=pointer]:
+            - /url: /match/29
+            - generic [ref=e681]:
+              - generic [ref=e682]:
+                - img "MA" [ref=e684]
+                - img "RG" [ref=e686]
+              - generic [ref=e687]:
+                - img [ref=e688]
+                - generic [ref=e692]: "57"
+            - generic [ref=e693]:
+              - heading "Mayank Aggarwal × Ranveer Gandhi" [level=3] [ref=e694]
+              - paragraph [ref=e695]: 27 · 27
+            - generic [ref=e696]:
+              - generic [ref=e697]: ★ Strong mutual
+              - generic [ref=e698]: A→B 58
+              - generic [ref=e699]: B→A 56
+              - generic [ref=e700]: 56 attr
+          - link "JC RJ 57 Janice Coutinho × Riya Jain 26 · 27 · Bangalore ★ Strong mutual A→B 55 B→A 58 58 attr" [ref=e702] [cursor=pointer]:
+            - /url: /match/30
+            - generic [ref=e703]:
+              - generic [ref=e704]:
+                - img "JC" [ref=e706]
+                - generic [ref=e708]: RJ
+              - generic [ref=e709]:
+                - img [ref=e710]
+                - generic [ref=e714]: "57"
+            - generic [ref=e715]:
+              - heading "Janice Coutinho × Riya Jain" [level=3] [ref=e716]
+              - paragraph [ref=e717]: 26 · 27 · Bangalore
+            - generic [ref=e718]:
+              - generic [ref=e719]: ★ Strong mutual
+              - generic [ref=e720]: A→B 55
+              - generic [ref=e721]: B→A 58
+              - generic [ref=e722]: 58 attr
+  - alert [ref=e724]
